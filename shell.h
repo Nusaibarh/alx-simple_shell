@@ -65,7 +65,6 @@ typedef struct line_list_s
 	struct line_list_s *next;
 } line_list;
 
-
 /**
  * struct r_var_list - single linked list
  * @len_var: length of the variable
@@ -189,7 +188,7 @@ int cd_shell(data_shell *datash);
 int (*get_builtin(char *cmd))(data_shell *datash);
 
 /* _exit.c */
-int exit_shell(data_shell *datash);:wq
+int exit_shell(data_shell *datash);
 
 /* aux_stdlib.c */
 int get_len(int n);
@@ -232,4 +231,3 @@ void aux_help_cd(void);
 int get_help(data_shell *datash);
 
 #endif
-
